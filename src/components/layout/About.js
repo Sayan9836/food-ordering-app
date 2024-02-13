@@ -40,23 +40,23 @@ const About = () => {
       <p>
         Say goodbye to long wait times and complicated order processes. With our
         user-friendly app, you can browse through menus, customize your orders,
-        and securely place them with just a few taps. Whether you're craving
-        comfort food or exploring new tastes, we've got you covered.
+        and securely place them with just a few taps. Whether you re craving
+        comfort food or exploring new tastes, we ve got you covered.
       </p>
       <h3 className="font-bold">Fast and Reliable Delivery</h3>
       <p>
         Our commitment to excellence extends to our delivery service. We
-        understand the importance of prompt and reliable deliveries. That's why
-        we've partnered with a network of dedicated drivers to ensure your
+        understand the importance of prompt and reliable deliveries. That s why
+        we ve partnered with a network of dedicated drivers to ensure your
         orders reach you fresh and hot, right on time.
       </p>
       <h2 className="font-bold text-2xl">Our Vision</h2>
       <p>
         At <span className="font-bold text-red-300">Feastify</span>, we envision
         a world where everyone can indulge in their favorite meals effortlessly.
-        We're passionate about fostering a sense of community and connection
+        We re passionate about fostering a sense of community and connection
         through the joy of sharing good food. Your satisfaction is our top
-        priority, and we're continually innovating to enhance your dining
+        priority, and we re continually innovating to enhance your dining
         experience.
       </p>
     </div>

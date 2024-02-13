@@ -16,6 +16,7 @@ const Review = ({ details }) => {
             border: "6px solid wheat",
           }}
         >
+          {/* eslint-disable-next-line */}
           <img
             src={details.img}
             alt="pic"

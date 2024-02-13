@@ -20,8 +20,8 @@ const Testimonial = () => {
           showStatus={false}
           className="max-w-[90vw] lg:max-w-[40vw] flex-2 hover:bg-transparent border-r-1 border-r-gray-100"
         >
-          {customers?.map((review) => {
-            return <Review details={review} />;
+          {customers?.map((review, idx) => {
+            return <Review key={idx} details={review} />;
           })}
         </Carousel>
       </div>

@@ -9,13 +9,13 @@ const Services = () => {
     >
       <div className="flex flex-col gap-2 items-center h-[500px]">
         <div className="relative w-full h-[250px]">
-          <Image src={"/service1.png"} fill={true} />
+          <Image src={"/service1.png"} fill={true} alt="service1" />
         </div>{" "}
         <h1 className="font-bold text-2xl text-gray-700 text-center items-center">
           Something for everyone
         </h1>
         <p className="text-gray-400 font-semibold ">
-          We've got every meal covered and more: from mouthwatering snacks and
+          We ve got every meal covered and more: from mouthwatering snacks and
           curated alcohol selections to indulgent desserts and even everyday
           essentials like paper towels. Elevate your dining experience with our
           diverse range of offerings
@@ -24,7 +24,7 @@ const Services = () => {
 
       <div className="flex flex-col gap-2 items-center h-[500px]">
         <div className="relative w-full h-[250px]">
-          <Image src={"/service2.png"} fill={true} />
+          <Image src={"/service2.png"} fill={true} alt="service2" />
         </div>
         <h1 className="font-bold text-2xl text-gray-700 text-center ">
           Delivery or pickup
@@ -40,7 +40,7 @@ const Services = () => {
 
       <div className="flex flex-col gap-2 items-center h-[500px]">
         <div className="relative w-full h-[250px]">
-          <Image src={"/service3.png"} fill={true} />
+          <Image src={"/service3.png"} fill={true} alt="service3" />
         </div>
         <h1 className="font-bold text-2xl text-gray-700 text-center">
           Premium Quality Food Selection

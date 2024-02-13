@@ -28,6 +28,7 @@ export default function Home() {
 
   useEffect(() => {
     wrapperFunction();
+    // eslint-disable-next-line
   }, []);
 
   const wrapperFunction = async () => {
@@ -73,6 +74,7 @@ export default function Home() {
             width={"700"}
             height={"450"}
             className=""
+            alt="burger_image"
           ></Image>
         </div>
       </section>
