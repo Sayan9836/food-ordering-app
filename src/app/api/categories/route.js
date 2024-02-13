@@ -3,6 +3,8 @@ import { Category } from "@/models/Category";
 import mongoose from "mongoose";
 
 export async function POST(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const { name } = await req.json();
   if (await isAdmin()) {
     const categoryDoc = await Category.create({ name });
@@ -13,6 +15,8 @@ export async function POST(req) {
 }
 
 export async function PUT(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const { _id, name } = await req.json();
   if (await isAdmin()) {
     await Category.updateOne({ _id }, { name });
@@ -26,6 +30,8 @@ export async function GET() {
 }
 
 export async function DELETE(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const url = new URL(req.url);
   const _id = url.searchParams.get("_id");
   if (await isAdmin()) {

@@ -6,6 +6,8 @@ import { getServerSession } from "next-auth";
 const stripe = require("stripe")(process.env.STRIPE_SIGN_SECRET);
 
 export async function POST(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const { cartProducts, address } = await req.json();
   const session = await getServerSession(authOptions);
   const userEmail = session?.user?.email;

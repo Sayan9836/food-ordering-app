@@ -4,6 +4,8 @@ import { getServerSession } from "next-auth";
 import { UserInfo } from "@/models/UserInfo";
 
 export async function POST(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const { product } = await req.json();
   console.log(product);
   const session = await getServerSession(authOptions);
@@ -40,6 +42,8 @@ export async function POST(req) {
 }
 
 export async function DELETE(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const url = new URL(req.url);
   const _id = url.searchParams.get("_id");
 
@@ -66,6 +70,8 @@ export async function DELETE(req) {
 }
 
 export async function GET(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const session = await getServerSession(authOptions);
   const email = session?.user?.email;
 

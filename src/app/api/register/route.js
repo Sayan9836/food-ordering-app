@@ -3,6 +3,8 @@ import bcrypt from "bcrypt";
 import mongoose from "mongoose";
 
 export async function POST(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const body = await req.json();
   const pass = body.password;
   if (!pass?.length || pass.length < 5) {

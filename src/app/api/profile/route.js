@@ -4,6 +4,8 @@ import { UserInfo } from "@/models/UserInfo";
 import { getServerSession } from "next-auth";
 
 export async function PUT(req) {
+  await mongoose.connect(process.env.MONGO_URL);
+
   const data = await req.json();
   console.log("p_route_put_data =>", data);
   const { _id, name, image, ...otherUserInfo } = data;
