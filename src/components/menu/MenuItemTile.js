@@ -7,7 +7,7 @@ export default function MenuItemTile({ onAddToCart, ...item }) {
   const hasSizesOrExtras =
     sizes?.length > 0 || extraIngredientPrices?.length > 0;
   return (
-    <div class="m-10 flex w-full max-w-sm flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md ">
+    <div class="flex w-full max-w-sm flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md ">
       <div class="mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
         <img class="cover w-full" src={image} alt="product image" />
       </div>

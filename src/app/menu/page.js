@@ -17,6 +17,7 @@ export default function MenuPage() {
   if (session.status === "unauthenticated") {
     router.push("/login");
   }
+
   useEffect(() => {
     setIsLoading(true);
     const promise1 = fetch("/api/categories").then((res) => {
@@ -53,7 +54,7 @@ export default function MenuPage() {
             <div className="text-center">
               <SectionHeaders mainHeader={c.name} />
             </div>
-            <div className="grid sm:grid-cols-3 gap-4 mt-6 mb-12">
+            <div className="grid sm:grid-cols-3 gap-4 mt-6 mb-12 border-2 border-red-400 p-4 lg:p-6 justify-items-center lg:justify-items-start">
               {menuItems
                 .filter((item) => item.category === c._id)
                 .map((item) => (

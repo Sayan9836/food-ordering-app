@@ -83,7 +83,7 @@ export default function CategoriesPage() {
     <section className="mt-8 max-w-2xl mx-auto">
       <UserTabs isAdmin={true} />
       <form className="mt-8" onSubmit={handleCategorySubmit}>
-        <div className="flex gap-2 items-end">
+        <div className="flex gap-2 items-end flex-wrap border-2 border-red-400">
           <div className="grow">
             <label>
               {editedCategory ? "Update category" : "New category name"}
@@ -97,6 +97,7 @@ export default function CategoriesPage() {
               type="text"
               value={categoryName}
               onChange={(ev) => setCategoryName(ev.target.value)}
+              // className="w-full"
             />
           </div>
           <div className="pb-2 flex gap-2">

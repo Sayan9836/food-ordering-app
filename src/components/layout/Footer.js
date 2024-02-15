@@ -33,10 +33,11 @@ const Footer = () => {
                       />
                     </a>
                     <p className="mt-6 text-gray-600">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Indulge in a culinary adventure with our innovative
+                      food-ordering app, seamlessly connecting you to a diverse
+                      range of top-rated restaurants. Tailor your orders to
+                      perfection with our user-friendly interface, offering
+                      customization options for every craving
                     </p>
                     <ul className="list-none mt-6 text-gray-600">
                       <li className="inline">
@@ -157,7 +158,7 @@ const Footer = () => {
                       <li className="mt-[10px]">
                         <a
                           href="#"
-                          className="text-blue-300 hover:text-gray-800 transition-all duration-500 ease-in-out"
+                          className="text-blue-300 hover:text-yellow-400 transition-all duration-500 ease-in-out"
                         >
                           Privacy Policy
                         </a>
@@ -201,7 +202,6 @@ const Footer = () => {
 
                         <button
                           type="submit"
-                          id="submitsubscribe"
                           name="send"
                           className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[#FFCDA3] border-[#FFCDA3] text-black rounded-md"
                         >
